@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HOTELO</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="style/style.css">
 
 </head>
@@ -21,6 +22,7 @@
 				<a href="#" class="menu__item">About Us</a>
 				<a href="#" class="menu__item">Location</a>
 				<a href="#" class="menu__item">Contact</a>
+
 				<button class="menu__btn">Sign in</button>
 			</div>
 		</div>
@@ -30,14 +32,65 @@
 	<div class="container">
 		<div class="choice">
 			<div>
-				<h2>Find Your Best Hotel <br> for Deals</h2>
+				<h2>Find Your Best Hotel <br class="br">  for Deals</h2>
 				<p>Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry.</p>
 			</div>
 			<div class="choice__board">
-				<input class="choice__input" type="date" name="calendar" placeholder="Choice data">
-				<input class="choice__input" type="" name="" placeholder="Guests">
-				<input class="choice__local" type="datetime-local" name="state" placeholder="huita">
-
+                <div class="choice__board__input">
+                    <input class="choice__input" type="date" name="calendar" placeholder="Choice data">
+                    <input class="choice__input" type="" name="" placeholder="2 Guests">
+                </div>
+                <select class="choice__local" name="region" id="input-select">
+                    <option value="State of Idaho">State of Idaho</option>
+                    <option value="State of Iowa">State of Iowa</option>
+                    <option value="State of Alabama">State of Alabama</option>
+                    <option value="State of Alaska">State of Alaska</option>
+                    <option value="State of Alaska">State of Alaska</option>
+                    <option value="State of Arkansas">State of Arkansas</option>
+                    <option value="State of Wyoming">State of Wyoming</option>
+                    <option value="State of Washington">State of Washington</option>
+                    <option value="State of Vermont">State of Vermont</option>
+                    <option value="Commonwealth of Virginia">Commonwealth of Virginia</option>
+                    <option value="State of Wisconsin">State of Wisconsin</option>
+                    <option value="State of Hawai`i">State of Hawai`i</option>
+                    <option value="State of Delaware">State of Delaware</option>
+                    <option value="State of Georgia">State of Georgia</option>
+                    <option value="State of West Virginia">State of West Virginia</option>
+                    <option value="State of Illinois">State of Illinois</option>
+                    <option value="State of Indiana">State of Indiana</option>
+                    <option value="State of California">State of California</option>
+                    <option value="State of Kansas">State of Kansas</option>
+                    <option value="Commonwealth of Kentucky">Commonwealth of Kentucky	</option>
+                    <option value="State of Colorado">State of Colorado</option>
+                    <option value="State of Connecticut">State of Connecticut</option>
+                    <option value="State of Louisiana">State of Louisiana</option>
+                    <option value="Commonwealth of Massachusetts">Commonwealth of Massachusetts</option>
+                    <option value="State of Minnesota">State of Minnesota</option>
+                    <option value="State of Mississippi">State of Mississippi</option>
+                    <option value="State of Missouri">State of Missouri</option>
+                    <option value="State of Michigan">State of Michigan</option>
+                    <option value="State of Montana">State of Montana</option>
+                    <option value="State of Maine">State of Maine</option>
+                    <option value="State of Maryland">State of Maryland</option>
+                    <option value="State of Nebraska">State of Nebraska</option>
+                    <option value="State of Nevada">State of Nevada</option>
+                    <option value="State of New Hampshire">State of New Hampshire</option>
+                    <option value="State of New Jersey">State of New Jersey</option>
+                    <option value="State of New York">State of New York</option>
+                    <option value="State of New Mexico">State of New Mexico</option>
+                    <option value="State of Ohio">State of Ohio</option>
+                    <option value="State of Oklahoma">State of Oklahoma</option>
+                    <option value="Commonwealth of Pennsylvania">Commonwealth of Pennsylvania</option>
+                    <option value="State of Rhode Island and Providence Plantations">State of Rhode Island and Providence Plantations</option>
+                    <option value="State of North Dakota">State of North Dakota</option>
+                    <option value="State of North Carolina">State of North Carolina</option>
+                    <option value="State of Tennessee">State of Tennessee</option>
+                    <option value="State of Texas">State of Texas</option>
+                    <option value="State of Florida">State of Florida</option>
+                    <option value="State of South Dakota">State of South Dakota</option>
+                    <option value="State of South Carolina">State of South Carolina</option>
+                    <option value="State of Utah">State of Utah</option>
+                </select>
 			</div>
 		</div>
 	</div>
@@ -146,14 +199,30 @@
 
 <div class="wrapper">
 	<div class="container">
-		<div class="slider">
-			<img class="slider__photo" src="img/slider_photo.png" alt="">
-			<div class="slider__info">
-				<img class="slider__user" src="img/slider_user.png" alt="">
-				<p>Nazmul Nabeel</p>
-				<h3>“Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. <br> Lorem Ipsum has been the industry's <br> standard dummy text ever since the ”</h3>
+		<div class="slider" id="slider__rewiew">
+			<div>
+				<div class="slider__item">
+					<img class="slider__photo" src="img/slider_photo.png" alt="">
+					<div class="slider__info">
+						<img class="slider__user" src="img/slider_user.png" alt="">
+						<p>Nazmul Nabeel</p>
+						<h3>“Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. <br> Lorem Ipsum has been the industry's <br> standard dummy text ever since the ”</h3>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="slider__item">
+					<img class="slider__photo" src="img/slider_photo.png" alt="">
+					<div class="slider__info">
+						<img class="slider__user" src="img/slider_user.png" alt="">
+						<p>Nazmul Nabeel</p>
+						<h3>“Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. <br> Lorem Ipsum has been the industry's <br> standard dummy text ever since the ”</h3>
+					</div>
+				</div>
 			</div>
 		</div>
+
+        </div>
 	</div>
 </div>
 
@@ -227,8 +296,10 @@
 			<div class="subscribe__info">
 				<h2>Subscribe for our mailing list to get <br> latest updates and offers</h2>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's </p>
-				<input type="email" name="email" id="subscribe" placeholder="Enter your email">
-
+                <div>
+                    <input type="email" name="email" id="subscribe" placeholder="Enter your email">
+                    <button class="subscribe__btn ">Subscribe</button>
+                </div>
 			</div>
 			<img src="img/subcribe.png" alt="">
 		</div>
@@ -241,6 +312,11 @@
 			<div class="footer__social">
 				<img src="img/footer__logo.png" alt="">
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<div class="social">
+					<img class="social__icon" src="img/facebook.png" alt="">
+					<img class="social__icon" src="img/insta.png" alt="">
+					<img class="social__icon" src="img/google.png" alt="">
+				</div>
 			</div>
 			<div class="footer__item">
 				<h2>Home</h2>
@@ -270,8 +346,8 @@
 
 
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="script/app.js"></script>
 
 
 
